@@ -12,15 +12,27 @@ NavGen contains first-person navigation videos with detailed action descriptions
 
 Data: https://huggingface.co/datasets/xinjiu/NavGen
 
+Install dependencies:
+
 ```bash
 pip install datasets huggingface_hub
+```
 
+Download via Python:
+
+```bash
 python -c "from datasets import load_dataset; dataset = load_dataset('xinjiu/NavGen')"
+```
 
-# or via huggingface_hub
+Or via huggingface_hub CLI:
+
+```bash
 huggingface-cli download xinjiu/NavGen --repo-type dataset --local-dir ./NavGen
+```
 
-# or via git clone
+Or via git clone:
+
+```bash
 git lfs install
 git clone https://huggingface.co/datasets/xinjiu/NavGen
 ```
@@ -29,12 +41,21 @@ git clone https://huggingface.co/datasets/xinjiu/NavGen
 
 Data: https://www.modelscope.cn/datasets/xinjiu612/NavGen
 
+Install dependencies:
+
 ```bash
 pip install modelscope
+```
 
+Download via Python:
+
+```bash
 python -c "from modelscope import snapshot_download; snapshot_download('xinjiu612/NavGen', repo_type='dataset', local_dir='./NavGen')"
+```
 
-# or via CLI
+Or via CLI:
+
+```bash
 modelscope download --dataset xinjiu612/NavGen --local_dir ./NavGen
 ```
 
